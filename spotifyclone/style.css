@@ -1,0 +1,320 @@
+body{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  background-color: black;
+  color: white;
+  margin: 0px;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+.sidebar{
+    background-color:black;
+    width: 340px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav-option{
+    height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+    opacity: 0.7;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+nav-option i{
+    font-size: 1.25rem;
+}
+nav-option a{
+    font-size: 1rem;
+    color: yellow;
+}
+
+.nav{
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 1rem;
+    margin:  0.3rem  0.3rem 0.3rem 0;
+}
+.library{
+    background-color: #121212;
+    height: 100%;
+    padding: 0.5rem 0.75rem;
+    border-radius: 1rem;
+    margin:  0.3rem  0.3rem 0.3rem 0;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .lib-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.lib-option a{
+    margin-left: 1rem;
+}
+.icons{
+    font-size: 1.2rem;
+    display: flex;
+}
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.navselection{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 0.8rem;
+}
+.navselection .dark{
+    color: white;
+    background-color: #2d2c2c;
+}
+.strips{
+    margin-top: 1.2rem;
+    margin-left: 0.5rem;
+}
+.strip{
+    margin: 0.8rem;
+    width: 100%;
+    display: flex;
+}
+.strip-title{
+    text-align: center;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+.strip-sub{
+    margin-right: 0.8rem;
+    display: flex;
+    width: 16.5rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    background-color: #2d2c2c;
+}
+.strip-sub img{
+    border-end-start-radius: 0.3rem;
+    border-start-start-radius: 0.3rem;
+    height: 3rem;
+    width: 3rem;
+}
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.70rem;
+    margin:0.2rem 0 1.75rem 0; 
+    padding: 0.5rem 0rem 0rem 1rem;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.box-p2{
+    font-size: 0.75rem;
+    opacity: 0.85;
+    margin-top: 0.5rem;
+}
+.badge{
+    border-radius: 100px;
+    font-weight: 700;
+    background-color: white;
+    border: none;
+    padding: 0.25rem 1rem;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    overflow: auto;
+    border-radius: 1rem;
+    color: white;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0px;
+    background-color: #121212;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem 0;
+    z-index: 10;
+}
+.sticky-nav-option img{
+     height: 2rem;
+     width: 2rem;
+}
+.sticky-nav-option{
+    margin-left: 0.75rem;
+}
+.sticky-nav-download{
+    display: flex;
+    align-items: center;
+    justify-content: centre;
+}
+.sticky-nav-download button{
+    margin: 0.85rem;
+    text-align: center;
+}
+.sticky-nav-download i{
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+}
+.dark-badge{
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+    font-weight: 700;
+    border: none;
+    padding: 0.25rem 1rem;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+@media(max-width:1000px){
+   .hide{
+    display: none;
+   }
+}
+h2{
+    margin-left: 1rem;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    background-color:rgb(60, 52, 52);
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.card img{
+    border-radius: 0.5rem;
+    width: 100%;
+}
+.card-title{
+    font-weight: 700;
+}
+.card-info{
+    font-weight: 300;
+    opacity: 0.7;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    height: 90%;
+    width: 100%;
+    border-top: 1px solid white;
+}
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.music-player-image{
+    height:3rem;
+    width: 3rem;
+    margin-left: 2rem;
+    border-radius: 0.3rem;
+}
+.nav-option1{
+    font-weight: 700;
+}
+.nav-option2{
+    font-weight: 300;
+    margin-left: 1.5rem;
+}
+.album i,.album-title{
+    margin-left: 1rem;
+}
+.album{
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+.album-title{
+    text-align: center;
+}
+.player{
+    width: 50%;
+}
+.player-control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2.3rem;
+}
+.player-control-icons{
+       height:1rem;
+       margin-right: 2rem;
+       opacity: 0.7;
+}
+.player-control-icons:hover{
+    opacity:1;
+}
+.controls{
+    /* height: 2.80rem; */
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.controls i,input{
+    margin-right: 1rem;
+    font-size: 0.75rem;
+}
+.playback-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress-bar{
+    appearance: none;
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-thumb{
+  margin-top: -5px;
+  appearance: none;
+  height: 0.75rem;
+  width: 0.75rem;
+    background-color: white;
+    border-radius: 50%;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;;
+    height: 0.2rem;
+}
